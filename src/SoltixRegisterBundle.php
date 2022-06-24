@@ -9,7 +9,7 @@
 
 declare(strict_types=1);
 
-namespace Soltix\RegisterBundle;
+namespace Soltix\Bundle\Register;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

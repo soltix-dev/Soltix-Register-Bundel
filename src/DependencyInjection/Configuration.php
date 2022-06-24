@@ -10,7 +10,7 @@
 
 declare(strict_types=1);
 
-namespace Soltix\RegisterBundle\DependencyInjection;
+namespace Soltix\Bundle\Register\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

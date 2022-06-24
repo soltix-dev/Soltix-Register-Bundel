@@ -20,7 +20,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Soltix\\RegisterBundle\\": "src/"
+            "Soltix\\Bundle\\Register\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Soltix\\Bundle\\Register\\Tests\\": "tests/"
         }
     },
     "authors": [
