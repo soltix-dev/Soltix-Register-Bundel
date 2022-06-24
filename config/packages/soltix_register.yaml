@@ -1,4 +1,5 @@
-social_register:
+soltix_register:
   email:
     activation: true
     welcome: true
+  userInstances: []

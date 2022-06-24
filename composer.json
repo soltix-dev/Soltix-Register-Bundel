@@ -5,7 +5,8 @@
     "license": "proprietary",
     "require": {
         "php": ">=8.1",
-        "symfony/framework-bundle": "^6.1"
+        "symfony/framework-bundle": "^6.1",
+        "symfony/security-bundle": "^6.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
@@ -35,12 +36,6 @@
         {
             "name": "Soltix",
             "email": "soltix@soltix.pl"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/soltix-dev/register-bundle"
         }
     ],
     "minimum-stability": "stable"
