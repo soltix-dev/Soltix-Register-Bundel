@@ -30,13 +30,17 @@ class Configuration implements ConfigurationInterface
 
         $treeBuilder->getRootNode()
             ->children()
-            // Email configuration.
+            // Start email configuration.
             ->arrayNode('email')
             ->children()
             ->booleanNode('activation')->end()
             ->booleanNode('welcome')->end()
             ->end()
             ->end()
+            // End email configuration.
+            // Start instances configuration.
+            ->arrayNode('userInstances')->end()
+            // End instances configuration.
             ->end();
 
         return $treeBuilder;

@@ -1,0 +1,3 @@
+soltix_register:
+  resource: ../src/Controller/
+  type: attribute
