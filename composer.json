@@ -1,5 +1,5 @@
 {
-    "name": "soltix/register-bundle",
+    "name": "soltix-dev/register-bundle",
     "description": "Register bundle for Symfony framework",
     "type": "symfony-bundle",
     "license": "proprietary",
