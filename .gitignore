@@ -1,0 +1,11 @@
+###> IDE ###
+/.idea/
+###< IDE ###
+
+###> composer ###
+/vendor/
+###< composer ###
+
+###> standards ###
+.phpcs-cache
+###< standards ###

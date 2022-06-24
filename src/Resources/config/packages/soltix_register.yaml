@@ -1,0 +1,4 @@
+social_register:
+  email:
+    activation: true
+    welcome: true
