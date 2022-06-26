@@ -34,8 +34,12 @@ class RegisterBundleExtension extends Extension
     public function load(array $configs, ContainerBuilder $container): void
     {
         // Define dirs.
-        $configDir   = new FileLocator(__DIR__.'/../../config');
-        $packagesDir = new FileLocator(__DIR__.'/../../packages');
+        $configDir   = new FileLocator(dirname(__DIR__).'/../../config');
+        $packagesDir = new FileLocator(dirname(__DIR__).'/../../packages');
+
+        // Apply config schema to the app config.
+        $configuration = new Configuration();
+        $this->processConfiguration($configuration, $configs);
 
         // Load the bundle's service declarations.
         $loader = new YamlFileLoader($container, $configDir);
@@ -45,10 +49,6 @@ class RegisterBundleExtension extends Extension
         // Load the bundle's packages declarations.
         $loader = new YamlFileLoader($container, $packagesDir);
         $loader->load('soltix_register.yaml');
-
-        // Apply config schema to the app config.
-        $configuration = new Configuration();
-        $this->processConfiguration($configuration, $configs);
 
     }//end load()
 
